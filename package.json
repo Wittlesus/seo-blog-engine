@@ -25,9 +25,17 @@
     "content-generation",
     "seo-optimization"
   ],
-  "author": "",
+  "author": "Pat <patricksereyouch@gmail.com>",
   "license": "ISC",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wittlesus/seo-blog-engine"
+  },
+  "homepage": "https://github.com/Wittlesus/seo-blog-engine",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "commander": "^14.0.3",
     "marked": "^17.0.2"
