@@ -4,6 +4,21 @@
 
 Stop staring at a blank page. SEO Blog Engine generates fully structured, SEO-ready markdown blog posts with frontmatter, table of contents, FAQ schema markup, keyword placement guides, and more. Just provide a topic and keywords, and get a production-ready template you can fill in and publish.
 
+## Pricing
+
+**$29 — One-time purchase. Not a subscription.**
+
+[**Buy Now**](https://buy.stripe.com/eVq7sKeTjcxQa7q9RE08g02)
+
+What you get:
+- All 4 content templates (How-To, Listicle, Comparison, Ultimate Guide)
+- Batch generation from JSON
+- Outline mode
+- SEO schema markup generation
+- Lifetime updates and future template additions
+
+**Save $119:** Get this + 6 other products in the [Complete Bundle for $99](https://buy.stripe.com/5kQeVceTj0P8enGe7U08g06)
+
 ## Why SEO Blog Engine?
 
 - **Save 2-3 hours per blog post** on structure and SEO setup
