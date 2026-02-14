@@ -1,0 +1,52 @@
+[
+  {
+    "topic": "How to Build a REST API with Node.js",
+    "keywords": "REST API, Node.js API, Express.js, API development, backend development",
+    "template": "how-to"
+  },
+  {
+    "topic": "CI/CD Pipelines",
+    "keywords": "CI/CD, continuous integration, continuous deployment, DevOps, GitHub Actions, Jenkins",
+    "template": "ultimate-guide"
+  },
+  {
+    "topic": "Docker vs Kubernetes",
+    "keywords": "Docker, Kubernetes, containerization, container orchestration, DevOps tools",
+    "template": "comparison"
+  },
+  {
+    "topic": "Project Management Tools for Dev Teams",
+    "keywords": "project management, Jira, Linear, Asana, developer tools, agile",
+    "template": "listicle"
+  },
+  {
+    "topic": "How to Implement Authentication in a SaaS App",
+    "keywords": "SaaS authentication, OAuth, JWT, user management, Auth0, Clerk",
+    "template": "how-to"
+  },
+  {
+    "topic": "Serverless Architecture",
+    "keywords": "serverless, AWS Lambda, cloud functions, FaaS, serverless computing, microservices",
+    "template": "ultimate-guide"
+  },
+  {
+    "topic": "React vs Vue vs Svelte",
+    "keywords": "React, Vue, Svelte, frontend frameworks, JavaScript frameworks, SPA",
+    "template": "comparison"
+  },
+  {
+    "topic": "Developer Productivity Tools",
+    "keywords": "developer tools, productivity, VS Code extensions, CLI tools, automation, dev workflow",
+    "template": "listicle"
+  },
+  {
+    "topic": "How to Set Up Monitoring for Your SaaS Application",
+    "keywords": "application monitoring, APM, Datadog, observability, logging, uptime monitoring",
+    "template": "how-to"
+  },
+  {
+    "topic": "Technical SEO for Developer Blogs",
+    "keywords": "technical SEO, developer blog, structured data, Core Web Vitals, site speed, meta tags",
+    "template": "ultimate-guide"
+  }
+]

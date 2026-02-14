@@ -1,0 +1,35 @@
+{
+  "name": "seo-blog-engine",
+  "version": "1.0.0",
+  "description": "Generate SEO-optimized blog post templates in seconds",
+  "main": "cli.js",
+  "bin": {
+    "seo-blog": "./cli.js"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node cli.js --help",
+    "generate": "node cli.js generate",
+    "outline": "node cli.js outline",
+    "batch": "node cli.js batch"
+  },
+  "keywords": [
+    "seo",
+    "blog",
+    "content-marketing",
+    "blog-generator",
+    "markdown",
+    "content-generation",
+    "seo-optimization"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "marked": "^17.0.2"
+  }
+}
