@@ -18,6 +18,12 @@ You write the content. We handle the SEO infrastructure.
 - 4 SEO-optimized content templates (How-To, Listicle, Comparison, Ultimate Guide)
 - Intelligent template detection based on your topic
 - Batch generation from JSON (scale to 100+ posts)
+- **NEW: AI-powered meta description generator** — auto-generated from your content
+- **NEW: Title tag optimizer** — scoring + improvement suggestions
+- **NEW: Readability scorer** — Flesch-Kincaid algorithm analysis
+- **NEW: Internal linking suggester** — AI-based content similarity recommendations
+- **NEW: Schema markup auto-generator** — detects Article, FAQ, HowTo schemas
+- **NEW: Keyword density analyzer** — prevents over/under optimization
 - **NEW: Automatic sitemap.xml generation with smart priorities**
 - **NEW: robots.txt generator with intelligent defaults**
 - **NEW: Comprehensive SEO audit system (checks 12+ SEO factors)**
@@ -69,10 +75,11 @@ Those tools leave you staring at a blank markdown file with no guidance on:
 |---------|----------------|--------------|-------|-----------|
 | **Fast static builds** | ✓ (output works with any SSG) | ✓ | ✗ | ✗ |
 | **SEO-optimized titles** | ✓ Auto-generated with year | ✗ Manual | ✗ Manual | ~ Plugins required |
-| **Meta descriptions** | ✓ Auto-generated, length-optimized | ✗ Manual | ✗ Manual | ~ Plugins required |
-| **Schema markup** | ✓ JSON-LD for FAQs included | ✗ Manual | ~ Limited | ~ Plugins required |
-| **Keyword placement guides** | ✓ Built-in | ✗ None | ✗ None | ~ Plugins required |
-| **Internal linking structure** | ✓ Placeholders with context | ✗ Manual | ✗ Manual | ✗ Manual |
+| **AI Meta descriptions** | ✓ Auto-generated from content | ✗ Manual | ✗ Manual | ~ Plugins required |
+| **Readability scoring** | ✓ Flesch-Kincaid algorithm | ✗ None | ✗ None | ~ Plugins required |
+| **AI Internal linking** | ✓ Content similarity-based | ✗ Manual | ✗ Manual | ✗ Manual |
+| **Schema markup** | ✓ Auto-detects & generates | ✗ Manual | ~ Limited | ~ Plugins required |
+| **Keyword density analysis** | ✓ Built-in AI analyzer | ✗ None | ✗ None | ~ Plugins required |
 | **SEO checklists** | ✓ Per-post, format-specific | ✗ None | ✗ None | ✗ None |
 | **Batch generation** | ✓ 100+ posts from JSON | ✗ None | ✗ None | ✗ None |
 | **Template detection** | ✓ Intelligent | ✗ None | ✗ None | ✗ None |
@@ -130,6 +137,47 @@ seo-blog batch --topics ./examples/topics.json --output ./blog-posts/
 seo-blog templates
 ```
 
+### AI-Powered SEO Optimization (NEW!)
+
+After writing your content, optimize it with AI-powered SEO analysis:
+
+```bash
+# Comprehensive AI SEO analysis
+seo-blog ai-optimize -f ./blog-posts/your-post.md
+
+# Get auto-generated meta description, title scoring, readability analysis,
+# keyword density check, internal link suggestions, and schema markup
+```
+
+**Or use the dedicated SEO CLI for more options:**
+
+```bash
+# Full SEO analysis report
+node seo.js analyze -f ./blog-posts/your-post.md
+
+# Batch analyze all posts
+node seo.js batch-analyze -d ./blog-posts
+
+# Generate internal linking suggestions
+node seo.js internal-links -d ./blog-posts
+
+# Generate schema markup
+node seo.js schema -f ./blog-posts/your-post.md
+
+# Quick optimization (all-in-one)
+node seo.js optimize -f ./blog-posts/your-post.md
+```
+
+**What you get:**
+- Auto-generated meta descriptions (150-160 chars, keyword-optimized)
+- Title tag scoring and improvement suggestions
+- Readability analysis using Flesch-Kincaid algorithm
+- Internal linking suggestions based on content similarity
+- Automatic schema markup generation (Article, FAQ, HowTo)
+- Keyword density analysis with over/under-optimization warnings
+
+**See [AI_SEO_FEATURES.md](./AI_SEO_FEATURES.md) for complete documentation.**
+
 ## What You Get in Every Generated Post
 
 SEO Blog Engine does not just create a blank template. Every post includes:
@@ -168,11 +216,22 @@ All of this is included automatically. You just fill in the content.
 | `batch` | Batch generate posts from a JSON topics file (scale to 100+) |
 | `outline` | Generate an outline only (structure + SEO recommendations) |
 | `templates` | List all available content templates |
+| **`ai-optimize`** | **AI-powered SEO analysis: meta descriptions, title optimization, readability, links** |
 | **`audit`** | **Run comprehensive SEO audit on all posts (checks 12+ factors)** |
 | **`sitemap`** | **Generate sitemap.xml with intelligent priorities and change frequencies** |
 | **`robots`** | **Generate robots.txt with search engine directives** |
 | **`redirect`** | **Manage 301 redirects (add, list, export as Next.js config)** |
 | **`performance`** | **Show performance optimization recommendations** |
+
+### SEO Analysis CLI (node seo.js)
+
+| Command | Description |
+|---------|-------------|
+| `analyze` | Full SEO analysis report for a single post |
+| `batch-analyze` | Analyze all posts in a directory with scoring |
+| `internal-links` | Generate AI-powered internal linking suggestions |
+| `schema` | Generate schema markup (Article, FAQ, HowTo) |
+| `optimize` | Quick all-in-one optimization recommendations |
 
 ### Generate Options
 
