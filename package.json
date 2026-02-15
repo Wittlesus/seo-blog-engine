@@ -1,7 +1,7 @@
 {
   "name": "seo-blog-engine",
-  "version": "1.0.0",
-  "description": "Generate SEO-optimized blog post templates in seconds",
+  "version": "2.0.0",
+  "description": "The blog engine that optimizes your SEO automatically",
   "main": "cli.js",
   "bin": {
     "seo-blog": "./cli.js"
@@ -14,7 +14,9 @@
     "test": "node cli.js --help",
     "generate": "node cli.js generate",
     "outline": "node cli.js outline",
-    "batch": "node cli.js batch"
+    "batch": "node cli.js batch",
+    "ai-optimize": "node cli.js ai-optimize",
+    "seo": "node seo.js"
   },
   "keywords": [
     "seo",
